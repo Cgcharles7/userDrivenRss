@@ -97,3 +97,7 @@ def submit_feed():
         db.session.commit()  # Commit the changes to the database
         return redirect(url_for('dashboard'))  # Redirect to dashboard after submission
     return render_template('submit_feed.html')  # Render feed submission form
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
