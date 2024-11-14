@@ -1,0 +1,14 @@
+userDrivenRSS/
+├── app.py                   # Main Flask app to handle server routes
+├── models.py                # Database models and data handling
+├── static/                  # Static files (CSS, JavaScript, images)
+│   ├── css/
+│   │   └── styles.css       # CSS for front-end layout
+│   ├── js/
+│   │   └── scripts.js       # JavaScript for front-end interactions
+│   └── images/              # Images (optional for the front-end)
+├── templates/               # HTML files for rendering
+│   └── index.html           # Main homepage HTML file
+├── requirements.txt         # List of dependencies for the project
+├── README.md                # Project description and instructions
+└── venv/                    # Virtual environment (if using Python)
