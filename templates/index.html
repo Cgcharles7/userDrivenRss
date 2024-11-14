@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User-Driven RSS Platform</title>
+    <!-- Link to static CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">RSSConnect</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Feeds</a></li>
+                <li><a href="#">Recommendations</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Your Feeds</h3>
+            <ul id="feed-list">
+                <!-- List of feeds will populate here dynamically -->
+            </ul>
+            <button id="add-feed">Add New Feed</button>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main>
+            <section class="feed-stream">
+                <h2>Latest RSS Feeds</h2>
+                <div id="feed-stream">
+                    <!-- Feed items will populate here dynamically -->
+                </div>
+            </section>
+
+            <section class="recommendations">
+                <h2>Recommended Feeds</h2>
+                <div id="recommendations-list">
+                    <!-- Recommended feeds will populate here dynamically -->
+                </div>
+            </section>
+        </main>
+
+        <!-- User Profile Section -->
+        <aside class="profile-section">
+            <h3>Profile</h3>
+            <div>
+                <h4>User: Jane Doe</h4>
+                <button>Manage Private Feeds</button>
+                <button>Account Settings</button>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RSSConnect - Your User-Driven RSS Experience</p>
+        <ul>
+            <li><a href="#">Community Guidelines</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+
+    <!-- Link to static JS file -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
